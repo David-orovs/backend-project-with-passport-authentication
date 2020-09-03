@@ -32,6 +32,7 @@ router.post('/register', (req, res) => {
 
   if (errors.length > 0) {
     res.render('register', {
+      // if error, go to register page
       errors,
       name,
       email,
@@ -41,6 +42,7 @@ router.post('/register', (req, res) => {
   } else { 
     // cos we dont want form to clear if validation is wrong, so the info will still show even when you dont meet requirement
     User.findOne({ email: email }).then(user => {
+      // user findone is checking that the email doesnt exist if it does render all the p 
       if (user) {
         errors.push({ msg: 'Email already exists' });
         res.render('register', {

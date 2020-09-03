@@ -1,5 +1,6 @@
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcryptjs');
+//  to decrypt the hash to make passwords match
 
 // Load User model
 const User = require('../models/User');
