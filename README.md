@@ -1,2 +1,10 @@
 # backend-project-with-passport-authentication
-this project uses ejs for client side rendering
+BACKEND PROJECT USING PASSPORT FOR AUTHENTICATION
+$ npm install
+$ npm start
+# Or run with Nodemon
+$ npm run dev
+
+# Visit http://localhost:5000
+MongoDB
+Open "config/keys.js" and add your MongoDB URI, local or Atlas
